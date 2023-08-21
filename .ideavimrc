@@ -56,7 +56,7 @@ nmap `` <Action>(ActivateTerminalToolWindow)
 xnoremap p pgvy
 
 " Esc
-imap jk <ESC>
+inoremap jk <ESC>
 
 " 行首/行尾移动
 nmap gh g^
@@ -82,6 +82,8 @@ nmap ge <action>(GotoNextError)
 " 跳转tab
 nmap H <Action>(PreviousTab)
 nmap L <Action>(NextTab)
+nmap J <ESC>:action EditorJoinLines<CR>
+
 " 跳转method
 nmap [f <Action>(MethodUp)
 nmap ]f <Action>(MethodDown)
