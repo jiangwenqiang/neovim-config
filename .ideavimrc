@@ -157,7 +157,7 @@ nmap <leader>dd <Action>(DebugClass)
 nmap <leader>db <Action>(ToggleLineBreakpoint)
 nmap <leader>dr <Action>(EvaluateExpression)
 " git
-nmap <leader>gb <Action>(Annotate)
+nmap <leader>ga <Action>(Annotate)
 " gpt plugin
 nmap <leader>cg <Action>(Generate)
 nmap <leader>ct <Action>(com.note.chatgpt.OpenCodeAiWindow)
