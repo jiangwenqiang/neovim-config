@@ -33,7 +33,7 @@ set smartcase
 " 行号显示
 set nu
 " 相对行号
-set rnu
+" set rnu
 
 " 滚动时保持上下边距
 set scrolloff=5
