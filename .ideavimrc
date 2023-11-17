@@ -61,10 +61,6 @@ inoremap jk <ESC>
 " 行首/行尾移动
 nmap gh g^
 nmap gl g$
-" 类查找
-nmap gw <Action>(GotoClass)
-" 类方法或类成员字段查找
-nmap gs <Action>(FileStructurePopup)
 " 实现类或方法查找
 nmap gi <Action>(GotoImplementation)
 " 跳转到定义或引用处
@@ -123,12 +119,16 @@ nmap <M-k> <Action>(MoveLineUp)
 " -----------------------------------------------------------
 " 复制整个缓冲区
 nmap <leader>y mmggVGy`m
+" 全部查找
+nmap <leader>fa <Action>(SearchEverywhere)
+" 类查找
+nmap <leader>fc <Action>(GotoClass)
+" 类方法或类成员字段查找
+nmap <leader>fs <Action>(FileStructurePopup)
 " 文件查找
 nmap <leader>ff <Action>(GotoFile)
 " 全局模糊搜索
 nmap <leader>fg <Action>(FindInPath)
-" 等价于idea中的shift+shift
-nmap <leader>fb <Action>(SearchEverywhere)
 " 全局替换
 nmap <leader>fr <Action>(ReplaceInPath)
 " 代码编辑提示
@@ -145,9 +145,7 @@ nmap <leader>lf <Action>(ReformatCode)
 " 重命名
 nmap <leader>rn <Action>(RenameElement)
 " 打开最近的项目
-nmap <leader>fs <Action>($LRU)
-" 选择主题
-nmap <leader>fc <Action>(ChangeLaf)
+nmap <leader>rp <Action>($LRU)
 " vim模式开关
 nmap <leader>vim <Action>(VimPluginToggle)
 " 选择idea keymap
