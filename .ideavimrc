@@ -1,24 +1,28 @@
 " -----------------------------------------------------------
 " -----------------     Global Settings      ----------------
 " -----------------------------------------------------------
+"
+" 所有的插件可以查阅官方插件说明：https://github.com/JetBrains/ideavim/wiki/IdeaVim-Plugins
 
 " 中英文输入法自动切换
 set keep-english-in-normal
 
-" surround插件
+" surround，ideavim自带的功能，不需要额外安装
 set surround
 
-" easymotion
-let g:EasyMotion_do_mapping = 0
+" easymotion，需要安装 easymotion 插件
+" 禁用默认的配置
 set easymotion
+let g:EasyMotion_do_mapping = 0
 
 " 仿真NERDTree插件
 " https://github.com/JetBrains/ideavim/wiki/NERDTree-support
 " set NERDTree
 " nmap <leader>e :NERDTreeFind<CR>
 
+" ReplaceWithRegister,ideavim自带的功能，不需要额外安装
 " https://github.com/JetBrains/ideavim/blob/master/doc/IdeaVim%20Plugins.md
-Plug 'vim-scripts/ReplaceWithRegister'
+set ReplaceWithRegister
 nmap rs  <Plug>ReplaceWithRegisterOperator
 nmap rss <Plug>ReplaceWithRegisterLine
 xmap rs  <Plug>ReplaceWithRegisterVisual
